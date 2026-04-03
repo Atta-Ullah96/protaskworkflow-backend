@@ -7,8 +7,11 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 
 const isProduction = process.env.NODE_ENV == 'production';
+console.log(isProduction);
+
 
 const origin = isProduction ? PROD_ORIGIN : DEV_ORIGIN
+console.log(origin);
 app.use(cors({
   origin, 
   credentials: true 
