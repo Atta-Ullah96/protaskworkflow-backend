@@ -5,7 +5,7 @@ import Task from '../models/task.model.js';
 
 
 // login developer
-export const loginDeveloper = async (req, res) => {
+export const loginDeveloper = async (req, res) => { 
   try {
     const { email, password  , role} = req.body;
 
